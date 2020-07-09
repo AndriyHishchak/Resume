@@ -1,0 +1,25 @@
+<div th:fragment="profile">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div th:insert="/blocks/profile/profile-main :: main"></div>
+            <div class="hidden-xs">
+                <div th:insert="/blocks/profile/profile-languages :: languages"></div>
+                <div th:insert="/blocks/profile/profile-hobbies :: hobbies"></div>
+                <div th:insert="/blocks/profile/profile-info :: info"></div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-6">
+            <div th:insert="/blocks/profile/profile-objective :: objective"></div>
+            <div th:insert="/blocks/profile/profile-skills :: skills"></div>
+            <div th:insert="/blocks/profile/profile-certificates :: certificates"></div>
+            <div th:insert="/blocks/profile/profile-cources :: cources"></div>
+            <div th:insert="/blocks/profile/profile-education :: education"></div>
+            <div th:insert="/blocks/profile/profile-practics :: practics"></div>
+            <div class="col-xs-12 visible-xs-block">
+                <div th:insert="/blocks/profile/profile-languages :: languages"></div>
+                <div th:insert="/blocks/profile/profile-hobbies :: hobbies"></div>
+                <div th:insert="/blocks/profile/profile-info :: info"></div>
+            </div>
+        </div>
+    </div>
+</div>
